@@ -6,6 +6,25 @@
     <title>A ROBOTS</title>
     <link rel="icon" href="1.png" type="image/png">
     <style>
+        /* Mobile message styling - hidden by default */
+        .mobile-message {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 24px;
+            padding: 20px;
+            z-index: 1000;
+        }
+
+        /* Original Desktop Styles */
         body {
             margin: 0;
             padding: 0;
@@ -209,10 +228,25 @@
             height: 70px;
         }
 
-
+        /* Hide main content on mobile */
+        @media (max-width: 768px) {
+            body > *:not(.mobile-message) {
+                display: none !important;
+            }
+            
+            .mobile-message {
+                display: flex;
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- Mobile-only message -->
+    <div class="mobile-message">
+        This website is only accessible through desktop devices
+    </div>
+
+    <!-- Original Content (hidden on mobile) -->
     <div class="section" id="section1">
         <div class="section1-top"></div>
         <div class="section1-bottom">
@@ -247,7 +281,7 @@
 
     <div class="section" id="section4">
         <div class="section4-top">
-            <h1><span style="font-size: 30px; color: white;">By our model AR1 & AR2, we offer a perfect business plan<br>Start your businees journey with A ROBOTS </span></p></h1>
+            <h1><span style="font-size: 30px; color: white;">By our model AR1 & AR2, we offer a perfect business plan, with profit margins upto 50%<br>Start your businees journey with A ROBOTS </span></p></h1>
         </div>
         <div class="section4-bottom">
             <a href="https://www.linkedin.com/" target="_blank" class="linkedin-link">
