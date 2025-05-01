@@ -6,7 +6,6 @@
     <title>A ROBOTS</title>
     <link rel="icon" href="1.png" type="image/png">
     <style>
-        /* Original Desktop Styles (unchanged) */
         body {
             margin: 0;
             padding: 0;
@@ -210,124 +209,7 @@
             height: 70px;
         }
 
-        /* Mobile-only Styles (applied only when screen width <= 768px) */
-        @media (max-width: 768px) {
-            /* Force remove horizontal scrolling */
-            body {
-                overflow-x: hidden;
-                width: 100%;
-            }
-            
-            /* Section 1 adjustments */
-            .boxes-container {
-                gap: 20px;
-                padding: 0 10px;
-            }
-            
-            .box {
-                font-size: 16px;
-                width: 22%;
-            }
-            
-            .section1-text {
-                font-size: 18px;
-                padding: 0 15px;
-                text-align: center;
-                top: 25vh;
-                height: auto;
-            }
-            
-            /* Section 2 adjustments */
-            .scrolling-text {
-                height: 15vh;
-                font-size: 40px;
-            }
-            
-            .main-content {
-                flex-direction: column;
-                height: 85vh;
-                padding: 10px;
-            }
-            
-            .text-content {
-                padding-right: 0;
-                font-size: 18px;
-                text-align: center;
-                flex: none;
-                height: 50%;
-            }
-            
-            .rotating-square {
-                width: 200px;
-                height: 200px;
-                margin: 0 auto;
-            }
-            
-            /* Section 3 adjustments - image swap and layout */
-            .section3-top {
-                height: 50vh;
-                background-image: url('xxx.png'); /* Mobile-only image */
-            }
-            
-            .section3-bottom {
-                height: 50vh;
-                font-size: 18px;
-                padding: 0 15px;
-            }
-            
-            /* Section 4 adjustments */
-            .section4-top {
-                height: 50vh;
-                font-size: 20px;
-                padding: 0 15px;
-            }
-            
-            .section4-bottom {
-                height: 50vh;
-            }
-            
-            .linkedin-link svg {
-                width: 50px;
-                height: 50px;
-            }
-            
-            /* Make "Muhammad Aun, CEO A ROBOTS" smaller */
-            .text-content span {
-                font-size: 20px;
-            }
-        }
 
-        /* Further adjustments for very small screens */
-        @media (max-width: 480px) {
-            .box {
-                font-size: 12px;
-            }
-            
-            .section1-text {
-                font-size: 16px;
-            }
-            
-            .scrolling-text {
-                font-size: 30px;
-            }
-            
-            .text-content {
-                font-size: 16px;
-            }
-            
-            .section3-bottom {
-                font-size: 16px;
-            }
-            
-            .section4-top {
-                font-size: 18px;
-            }
-            
-            /* Make "Muhammad Aun, CEO A ROBOTS" even smaller */
-            .text-content span {
-                font-size: 18px;
-            }
-        }
     </style>
 </head>
 <body>
